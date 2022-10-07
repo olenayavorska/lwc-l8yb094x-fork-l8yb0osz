@@ -23,23 +23,22 @@
 			<p class="slds-p-horizontal_small">50</p>
 			<div slot="footer">
 				<div class="slds-grid slds-wrap">
-					<div class="slds-size_2-of-7 slds-grid slds-wrap" style="font-size:18; paddint-top:2px">
-						<div>270</div>€
+					<div class="slds-size_2-of-7 slds-grid slds-wrap" style="font-size: 17px; padding-top: 2px;">
+						<div style="color:red">270</div>€
 					</div>
 					<div class="slds-size_1-of-7">
-						<lightning-button variant="base" label="-" title="Less" onclick={handleDecrementClick}
-							class="slds-m-left_x-small"></lightning-button>
+						<lightning-button class="button" variant="base" label="-" title="Less"></lightning-button>
 					</div>
 					<div class="slds-size_1-of-7">
-						<lightning-input type="number" name="inputQuantity" variant="label-hidden" value="12345"></lightning-input>
+						<lightning-input type="number" name="inputQuantity" label="input" variant="label-hidden" value="1" step="1">
+						</lightning-input>
 					</div>
 					<div class="slds-size_1-of-7">
-						<lightning-button variant="base" label="+" title="Add" onclick={handleIncrementClick}
-							class="slds-m-left_x-small"></lightning-button>
+						<lightning-button class="button" variant="base" label="+" title="Add"></lightning-button>
 					</div>
 					<div class="slds-size_2-of-7">
-						<lightning-button variant="base" label="Order" title="Order" onclick={handleIncrementClick}
-							class="slds-m-left_x-small"></lightning-button>
+						<lightning-button variant="brand" label="Order" title=" Order " class="slds-float_right">
+						</lightning-button>
 					</div>
 				</div>
 			</div>
