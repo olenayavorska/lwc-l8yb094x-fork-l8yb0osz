@@ -1,0 +1,36 @@
+<template>
+	<!--	<div class="slds-grid slds-wrap">
+		<template for:each={orderItems} for:item="contact">
+
+			<div key={contact.Id} padding="horizontal_x-small" class="slds-m-around_xxx-small">
+				<lightning-card title="Hello">
+					<lightning-button label="Select" slot="actions"></lightning-button>
+					<p class="slds-p-horizontal_small">{contact.Name}, {contact.Price}</p>
+					<p class="slds-p-horizontal_small">50</p>
+					<p class="slds-p-horizontal_small">50</p>
+				</lightning-card>
+			</div>
+		</template>
+
+	</div>-->
+
+
+
+	<div class='card'>
+		<lightning-card>
+			<p class="slds-p-horizontal_small">Product Name</p>
+			<p class="slds-p-horizontal_small">50</p>
+			<p class="slds-p-horizontal_small">50</p>
+			<div slot="footer">
+				<lightning:buttonIcon icon-name="utility:dash" variant="base" onclick="{! c.handleDecrementClick }"
+					alternativeText="Less"></lightning:buttonIcon>
+				<lightning:buttonIcon icon-name="utility:add" variant="base" onclick="{! c.handleIncrementClick }"
+					alternativeText="Add"></lightning:buttonIcon>
+			</div>
+		</lightning-card>
+	</div>
+
+
+
+
+</template>

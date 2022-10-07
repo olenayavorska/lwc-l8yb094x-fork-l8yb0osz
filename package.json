@@ -1,0 +1,7 @@
+{
+  "name": "@wcd/olenayavorska.lwc-l8yb094x-fork-l8yb0osz",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx wcd-cli@latest serve 3ahjCrGFrt6t3esJjU5A --open"
+  }
+}
