@@ -32,7 +32,10 @@ lightning-button.button {
      transform:scale(2);
 }
 .card-hover-zoom:hover{
-  transform:scale(1.05);
+  display: block;
+  transform:scale(1.085);
   z-index: 2;
+  border: 2px solid gray;
+  border-radius: 6px;
 }
 
