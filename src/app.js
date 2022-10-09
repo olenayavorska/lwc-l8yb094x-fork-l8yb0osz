@@ -17,6 +17,26 @@ export default class App extends LightningElement {
             Name: 'Cappuchino',
             Price: '2',
         },
+         {
+            Id: 4,
+            Name: 'Some soup',
+            Price: '4',
+        },
+        {
+            Id: 5,
+            Name: 'Potato',
+            Price: '4',
+        },
+        {
+            Id: 6,
+            Name: 'Cappuchino',
+            Price: '2',
+        },
+        {
+            Id: 7,
+            Name: 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+            Price: '2',
+        },
         
     ];
      @track quantity = 0;
