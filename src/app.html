@@ -1,4 +1,5 @@
 <template>
+
 	<div class="mainContainer">
 		<div class="menu">
 			<ul>
@@ -8,6 +9,9 @@
 			</ul>
 		</div>
 	</div>
+
+
+
 	<div class="slds-grid slds-wrap">
 		<template for:each={orderItems} for:item="orderIt">
 
@@ -25,26 +29,26 @@
 							<div class="foodImage img-hover-zoom">
 								<img src=https://media01.stockfood.com/largepreviews/MzQ2MTY2Nzcw/11166670-Plain-Cheese-Pizza-Sliced-Once-on-a-White-Background.jpg alt="Rajma" />
 							</div>
-							<div slot="footer" class="slds-m-top_x-small">
-								<div class="slds-grid slds-wrap">
-									<div class="slds-size_2-of-7 slds-grid slds-wrap" style="font-size: 17px; padding-top: 2px;">
-										<div style="color:red">{orderIt.Price}</div>€
-									</div>
-									<div class="slds-size_1-of-7">
-										<lightning-button class="button" variant="base" label="-" title="Less"></lightning-button>
-									</div>
-									<div class="slds-size_1-of-7">
-										<lightning-input type="number" name="inputQuantity" label="input" variant="label-hidden" value="1"
-											step="1">
-										</lightning-input>
-									</div>
-									<div class="slds-size_1-of-7">
-										<lightning-button class="button" variant="base" label="+" title="Add"></lightning-button>
-									</div>
-									<div class="slds-size_2-of-7">
-										<lightning-button variant="brand" label="Order" title=" Order " class="slds-float_right">
-										</lightning-button>
-									</div>
+						</div>
+						<div slot="footer" class="slds-m-top_x-small">
+							<div class="slds-grid slds-wrap slds-p-around_x-small">
+								<div class="slds-size_2-of-7 slds-grid slds-wrap" style="font-size: 17px; padding-top: 2px;">
+									<div style="color:red">{orderIt.Price}</div>€
+								</div>
+								<div class="slds-size_1-of-7">
+									<lightning-button class="button" variant="base" label="-" title="Less"></lightning-button>
+								</div>
+								<div class="slds-size_1-of-7">
+									<lightning-input type="number" name="inputQuantity" label="input" variant="label-hidden" value="1"
+										step="1">
+									</lightning-input>
+								</div>
+								<div class="slds-size_1-of-7">
+									<lightning-button class="button" variant="base" label="+" title="Add"></lightning-button>
+								</div>
+								<div class="slds-size_2-of-7">
+									<lightning-button variant="brand" label="Order" title=" Order " class="slds-float_right">
+									</lightning-button>
 								</div>
 							</div>
 						</div>
