@@ -86,7 +86,7 @@ lightning-button.button {
   display: block;
   transform:scale(1.085);
   z-index: 2;
-  border: 2px solid rgb(106 149 242 / 80%);;
+  border: 3px solid rgb(106 149 242 / 80%);;
   border-radius: 6px;
 }
 
