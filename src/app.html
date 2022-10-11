@@ -2,36 +2,40 @@
 	<div class="slds-grid slds-wrap">
 		<template for:each={orderItems} for:item="orderIt">
 
-			<div key={orderIt.Id} padding="horizontal_x-small" class="slds-size_1-of-3 slds-p-around_x-small">
-				<div class="card-hover-zoom ">
+			<div key={orderIt.Id} padding="horizontal_x-small" class="slds-size_1-of-4 slds-p-around_x-small">
+				<div class=" card card-hover-zoom">
 					<lightning-card>
-						<div class="img-hover-zoom">
-							<img src="https://media01.stockfood.com/largepreviews/MzQ2MTY2Nzcw/11166670-Plain-Cheese-Pizza-Sliced-Once-on-a-White-Background.jpg" alt="This zooms-in really well and smooth">
+						<div class="card-header">
+							<div class="sNo">1</div>
+							<div class="type">type</div>
+							<h3 class="title slds-truncate" title={orderIt.Name}>{orderIt.Name}</h3>
+							<div class="line"></div>
 						</div>
 
-						<p class="slds-m-top_x-small  slds-truncate"
-							style="text-align: center;font-size:20px;font-family: Georgia, serif; margin: 0 5%;" title={orderIt.Name}>
-							{orderIt.Name}
-						</p>
-						<div slot="footer">
-							<div class="slds-grid slds-wrap">
-								<div class="slds-size_2-of-7 slds-grid slds-wrap" style="font-size: 17px; padding-top: 2px;">
-									<div style="color:red">{orderIt.Price}</div>€
-								</div>
-								<div class="slds-size_1-of-7">
-									<lightning-button class="button" variant="base" label="-" title="Less"></lightning-button>
-								</div>
-								<div class="slds-size_1-of-7">
-									<lightning-input type="number" name="inputQuantity" label="input" variant="label-hidden" value="1"
-										step="1">
-									</lightning-input>
-								</div>
-								<div class="slds-size_1-of-7">
-									<lightning-button class="button" variant="base" label="+" title="Add"></lightning-button>
-								</div>
-								<div class="slds-size_2-of-7">
-									<lightning-button variant="brand" label="Order" title=" Order " class="slds-float_right">
-									</lightning-button>
+						<div class="card-body">
+							<div class="foodImage img-hover-zoom">
+								<img src=https://media01.stockfood.com/largepreviews/MzQ2MTY2Nzcw/11166670-Plain-Cheese-Pizza-Sliced-Once-on-a-White-Background.jpg alt="Rajma" />
+							</div>
+							<div slot="footer" class="slds-m-top_x-small">
+								<div class="slds-grid slds-wrap">
+									<div class="slds-size_2-of-7 slds-grid slds-wrap" style="font-size: 17px; padding-top: 2px;">
+										<div style="color:red">{orderIt.Price}</div>€
+									</div>
+									<div class="slds-size_1-of-7">
+										<lightning-button class="button" variant="base" label="-" title="Less"></lightning-button>
+									</div>
+									<div class="slds-size_1-of-7">
+										<lightning-input type="number" name="inputQuantity" label="input" variant="label-hidden" value="1"
+											step="1">
+										</lightning-input>
+									</div>
+									<div class="slds-size_1-of-7">
+										<lightning-button class="button" variant="base" label="+" title="Add"></lightning-button>
+									</div>
+									<div class="slds-size_2-of-7">
+										<lightning-button variant="brand" label="Order" title=" Order " class="slds-float_right">
+										</lightning-button>
+									</div>
 								</div>
 							</div>
 						</div>
